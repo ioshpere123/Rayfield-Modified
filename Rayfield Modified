@@ -1145,7 +1145,7 @@ end
 
 local function SaveConfiguration()
 	warn("Function called")
-	if CEnabled return end
+	if CEnabled then return end
 
 	if debugX then
 		print('Saving')
