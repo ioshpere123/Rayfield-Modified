@@ -1142,9 +1142,8 @@ local function LoadConfiguration(Configuration)
 
 	return changed
 end
-print("Test")
+
 local function SaveConfiguration()
-	warn("Function called")
 	if CEnabled then return end
 
 	if debugX then
