@@ -2951,7 +2951,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					end)
 
 					Rayfield.Main:GetPropertyChangedSignal('BackgroundColor3'):Connect(function()
-						if DropdownOption.UIStroke ~= nil then
+						if DropdownOption:FindFirstChild("UIStroke") then
 							DropdownOption.UIStroke.Color = SelectedTheme.ElementStroke
 						end
 					end)
