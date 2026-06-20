@@ -964,7 +964,9 @@ local function ChangeTheme(Theme)
 				local ElementList = Element:FindFirstChild("List")
 				if ElementList then
 					for i, option in pairs(ElementList:GetChildren()) do
-						option.BackgroundColor3 = SelectedTheme.ElementBackground
+						if option.ClassName == "Frame" and option.Name ~= "Placeholder" then
+							option.BackgroundColor3 = SelectedTheme.ElementBackground
+						end
 					end
 				end
 			end
