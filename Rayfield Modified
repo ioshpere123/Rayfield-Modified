@@ -965,7 +965,7 @@ local function ChangeTheme(Theme)
 				if ElementList then
 					for i, option in pairs(ElementList:GetChildren()) do
 						if option.ClassName == "Frame" and option.Name ~= "Placeholder" then
-							option.BackgroundColor3 = SelectedTheme.ElementBackground
+							option.BackgroundColor3 = SelectedTheme.DropdownUnselected
 						end
 					end
 				end
